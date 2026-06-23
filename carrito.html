@@ -3,118 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaposMX - Carrito</title>
+    <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/carrito.css">
+    <title>PaposMX | Carrito</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <button class="header-menu-btn" id="menuToggle">☰</button>
-        <div class="header-center">
-            <span class="header-logo">🎾</span>
-            <h1 class="header-title">PaposMX</h1>
-        </div>
-        <nav class="header-nav">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="marcas.html" class="nav-link">Marcas</a>
-            <a href="categorias.html" class="nav-link">Categorías</a>
-            <a href="productos.html" class="nav-link">Productos</a>
-            <a href="favoritos.html" class="nav-link">Favoritos</a>
-            <a href="perfil.html" class="nav-link">Perfil</a>
-            <a href="carrito.html" class="nav-link cart-link">🛒 Carrito</a>
-        </nav>
-    </header>
 
-    <!-- Mobile Menu -->
-    <nav class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <h2>PaposMX</h2>
-            <button class="mobile-close-btn" id="menuClose">✕</button>
-        </div>
-        <a href="index.html" class="mobile-nav-link">Inicio</a>
-        <a href="marcas.html" class="mobile-nav-link">Marcas</a>
-        <a href="categorias.html" class="mobile-nav-link">Categorías</a>
-        <a href="productos.html" class="mobile-nav-link">Productos</a>
-        <a href="favoritos.html" class="mobile-nav-link">Favoritos</a>
-        <a href="perfil.html" class="mobile-nav-link">Perfil</a>
-        <a href="carrito.html" class="mobile-nav-link cart-link">Carrito</a>
+<header>
+    <span class="header-back" onclick="window.location.href='productos.html'">&larr;</span>
+    <div class="logo" onclick="window.location.href='index.html'"><img src="Images/Papos_mx.png" alt="PaposMX" class="logo-img"> PaposMX</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="categorias.html">Categor&iacute;as</a></li>
+            <li><a href="marcas.html">Marcas</a></li>
+            <li><a href="login.html">Iniciar Sesi&oacute;n</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="carrito.html" class="nav-cart">Carrito</a></li>
+        </ul>
     </nav>
-    <div class="menu-overlay" id="menuOverlay"></div>
+    <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+</header>
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-header">
+    <span>Men&uacute;</span>
+    <span class="mobile-close" onclick="toggleMenu()">&times;</span>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="categorias.html">Categor&iacute;as</a>
+    <a href="marcas.html">Marcas</a>
+    <a href="login.html">Iniciar Sesi&oacute;n</a>
+    <a href="registro.html">Registro</a>
+    <a href="carrito.html" class="nav-cart">Carrito</a>
+  </nav>
+</div>
 
-    <!-- Main Content -->
-    <main class="cart-container">
-        <h1 class="cart-title">Carrito</h1>
+<main>
+    <h1 class="cart-title">Carrito</h1>
+
+    <div class="cart-wrap">
 
         <div class="cart-items">
+
             <div class="cart-item">
-                <div class="item-image">
-                    <img src="Images/AF1-Beige.png" alt="">
-                </div>
-                <div class="item-info">
-                    <h3>Nike Air Force 1 Low ´07 LX</h3>
-                    <button class="item-icon">✕</button>
-                </div>
+                <div class="item-img"><img src="Images/converse.png" alt="Converse"></div>
+                <div class="item-row"><h3>Converse</h3><span class="item-del">&times;</span></div>
+                <div class="item-sub"><span class="price">$1,200</span></div>
             </div>
 
             <div class="cart-item">
-                <div class="item-image">
-                    <img src="Images/Jordan.png" alt="">
-                </div>
-                <div class="item-info">
-                    <h3>Nike Jordan Luka 4</h3>
-                    <button class="item-icon">✕</button>
-                </div>
+                <div class="item-img"><img src="Images/AF1-Beige.png" alt="Nike Air Force 1"></div>
+                <div class="item-row"><h3>Nike Air Force 1</h3><span class="item-del">&times;</span></div>
+                <div class="item-sub"><span class="price">$2,350</span></div>
             </div>
+
         </div>
 
         <div class="cart-summary">
-            <div class="summary-row">
-                <span>Impuestos</span>
-                <span>00.00</span>
-            </div>
-            <div class="summary-row">
-                <span>Subtotal</span>
-                <span>00.00</span>
-            </div>
-            <div class="summary-row">
-                <span>Envío</span>
-                <span>00.00</span>
-            </div>
-            <div class="summary-row total">
-                <span>Total</span>
-                <span>00.00</span>
-            </div>
+            <div class="s-row"><span>Impuestos</span><span>$0.00</span></div>
+            <div class="s-row"><span>Subtotal</span><span>$3,550</span></div>
+            <div class="s-row"><span>Env&iacute;o</span><span class="envio-gratis">Gratis</span></div>
+            <div class="s-row s-total"><span>Total</span><span>$3,550</span></div>
+            <button class="btn-pagar">Pagar</button>
         </div>
 
-        <button class="btn-checkout">Pagar</button>
-    </main>
+    </div>
+</main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>PaposMX</h3>
-                <p>Tu tienda de tenis favorita online</p>
-            </div>
-            <div class="footer-section">
-                <h4>Enlaces</h4>
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="marcas.html">Marcas</a>
-                <a href="categorias.html">Categorías</a>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p>Email: info@paposmx.com</p>
-                <p>Teléfono: +52 (555) 123-4567</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 PaposMX. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+<footer>
+    <h3><img src="Images/Papos_mx.png" alt="PaposMX" class="footer-logo"> PaposMX</h3>
+    <p>Tu tienda de confianza para los mejores tenis del mercado.</p>
+    <p class="copy">&copy; 2026 PaposMX Inc.</p>
+</footer>
 
-    <script src="Scripts/common-script.js"></script>
+<script>function toggleMenu(){var p=document.getElementById("mobilePanel"),o=document.getElementById("mobileOverlay");if(p.classList.contains("active")){p.classList.remove("active");o.classList.remove("active")}else{p.classList.add("active");o.classList.add("active")}}</script>
 </body>
 </html>
-

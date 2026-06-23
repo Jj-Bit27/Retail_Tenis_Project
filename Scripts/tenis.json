@@ -1,0 +1,79 @@
+{
+  "adidas_x": {
+    "nombre": "Adidas X_PLR Path",
+    "marca": "adidas",
+    "categoria": "correr",
+    "genero": "mujer",
+    "precio": 1499,
+    "descripcion": "Tenis Adidas X_PLR Path con diseño moderno y ligero, ideales para correr con comodidad y estilo.",
+    "imagen": "Images/adidas.png",
+    "talla": [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7],
+    "colores": ["negro y rosa", "blanco y negro"]
+  },
+  "nike_af1_lx": {
+    "nombre": "Nike Air Force 1 Low '07 LX",
+    "marca": "nike",
+    "categoria": "casual",
+    "genero": "hombre",
+    "precio": 2599,
+    "descripcion": "Clásicos Nike Air Force 1 Low con acabado premium y toques modernos para un look urbano.",
+    "imagen": "Images/AF1-Beige.png",
+    "talla": [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    "colores": ["beige y blanco", "blanco y negro"]
+  },
+  "nike_af1_ambush": {
+    "nombre": "Nike Air Force 1 Low SP Ambush",
+    "marca": "nike",
+    "categoria": "casual",
+    "genero": "hombre",
+    "precio": 3299,
+    "descripcion": "Edición especial Nike Air Force 1 Low SP Ambush con detalles únicos y diseño audaz.",
+    "imagen": "Images/AF1-Verde.png",
+    "talla": [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    "colores": ["verde y amarillo", "negro y blanco"]
+  },
+  "clasben_polo": {
+    "nombre": "Clasben Polo",
+    "marca": "clasben",
+    "categoria": "casual",
+    "genero": "hombre",
+    "precio": 899,
+    "descripcion": "Tenis Clasben Polo con estilo clásico y versátil, perfectos para el día a día.",
+    "imagen": "Images/BIli.png",
+    "talla": [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    "colores": ["blanco, negro y gris", "blanco y negro"]
+  },
+  "converse": {
+    "nombre": "Converse Chuck Taylor All Star Lugged 2.0",
+    "marca": "converse",
+    "categoria": "casual",
+    "genero": "mujer",
+    "precio": 1199,
+    "descripcion": "Converse Chuck Taylor All Star con suela reforzada para un estilo audaz y mayor durabilidad.",
+    "imagen": "Images/converse.png",
+    "talla": [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7],
+    "colores": ["blanco y negro", "negro y rosa"]
+  },
+  "nike_dunk": {
+    "nombre": "Nike Dunk Low",
+    "marca": "nike",
+    "categoria": "casual",
+    "genero": "hombre",
+    "precio": 1999,
+    "descripcion": "Nike Dunk Low con diseño icónico y colores versátiles que combinan con todo.",
+    "imagen": "Images/Daft-low.png",
+    "talla": [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    "colores": ["gris y blanco", "negro y blanco"]
+  },
+  "nike_jordan": {
+    "nombre": "Nike Jordan Luka 4",
+    "marca": "nike",
+    "categoria": "basquetball",
+    "genero": "hombre",
+    "precio": 4599,
+    "descripcion": "Tenis Nike Jordan Luka 4 con tecnología de punta para el máximo rendimiento en la cancha.",
+    "imagen": "Images/Jordan.png",
+    "talla": [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    "colores": ["negro, verde y gris", "negro, naranja y azul"]
+  }
+}
