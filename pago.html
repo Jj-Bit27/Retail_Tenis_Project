@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/pago.css">
+    <title>PaposMX | Pago</title>
+</head>
+<body>
+
+<header>
+    <span class="header-back" onclick="window.location.href='carrito.html'">&larr;</span>
+    <div class="logo" onclick="window.location.href='index.html'"><img src="Images/Papos_mx.png" alt="PaposMX" class="logo-img"> PaposMX</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="categorias.html">Categor&iacute;as</a></li>
+            <li><a href="marcas.html">Marcas</a></li>
+            <li><a href="login.html">Iniciar Sesi&oacute;n</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="carrito.html" class="nav-cart">Carrito</a></li>
+        </ul>
+    </nav>
+    <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+</header>
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-header">
+    <span>Men&uacute;</span>
+    <span class="mobile-close" onclick="toggleMenu()">&times;</span>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="categorias.html">Categor&iacute;as</a>
+    <a href="marcas.html">Marcas</a>
+    <a href="login.html">Iniciar Sesi&oacute;n</a>
+    <a href="registro.html">Registro</a>
+    <a href="carrito.html" class="nav-cart">Carrito</a>
+  </nav>
+</div>
+
+<main>
+    <div class="pay-wrap">
+        <h1 class="pay-title">M&eacute;todo de Pago</h1>
+
+        <div class="card-preview">
+            <div class="card-face">
+                <div class="card-brand">
+                    <span class="brand-logo">VISA</span>
+                </div>
+                <div class="card-chip"></div>
+                <div class="card-number">****  ****  ****  ****</div>
+                <div class="card-details">
+                    <div class="cd-item">
+                        <span class="cd-label">Titular</span>
+                        <span class="cd-value">JUAN P&Eacute;REZ</span>
+                    </div>
+                    <div class="cd-item">
+                        <span class="cd-label">Vence</span>
+                        <span class="cd-value">MM/AA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pay-form">
+            <div class="input-box">
+                <span class="input-icon">&#x1F4B3;</span>
+                <div class="input-body">
+                    <label>N&uacute;mero de tarjeta</label>
+                    <input type="text" placeholder="0000  0000  0000  0000">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <span class="input-icon">&#x1F464;</span>
+                <div class="input-body">
+                    <label>Titular</label>
+                    <input type="text" placeholder="Nombre del titular">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-box">
+                    <span class="input-icon">&#x1F4C5;</span>
+                    <div class="input-body">
+                        <label>Vencimiento</label>
+                        <input type="text" placeholder="MM / AA">
+                    </div>
+                </div>
+                <div class="input-box cvv-box">
+                    <span class="input-icon">&#x1F511;</span>
+                    <div class="input-body">
+                        <label>CVV</label>
+                        <input type="text" placeholder="***" maxlength="4">
+                    </div>
+                    <div class="cvv-hint">3 o 4 d&iacute;gitos al reverso de tu tarjeta</div>
+                </div>
+            </div>
+
+            <button class="btn-pagar" onclick="window.location.href='carrito.html'">Pagar $3,550</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <h3><img src="Images/Papos_mx.png" alt="PaposMX" class="footer-logo"> PaposMX</h3>
+    <p>Tu tienda de confianza para los mejores tenis del mercado.</p>
+    <p class="copy">&copy; 2026 PaposMX Inc.</p>
+</footer>
+
+<script>function toggleMenu(){var p=document.getElementById("mobilePanel"),o=document.getElementById("mobileOverlay");if(p.classList.contains("active")){p.classList.remove("active");o.classList.remove("active")}else{p.classList.add("active");o.classList.add("active")}}</script>
+</body>
+</html>
